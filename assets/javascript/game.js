@@ -57,8 +57,7 @@
 // GAME RESTARTS WITH NEW RANDOM NUMBER AND NEW HIDDEN VALUES //
 var countingValue = 0;
 var constantNum = 0;
-var winner = 0;
-var loser = 0;
+
 $(document).ready(function () {
 	intialize ();
 })
@@ -68,11 +67,11 @@ function image1(x) {
 		countingValue = parseInt(countingValue) + parseInt(document.getElementById("imageInput1").value);
 		document.getElementById("totalScore").innerHTML = countingValue;
 		if (countingValue === constantNum) {
-			document.getElementById("wins").innerHTML = parseInt(winner) + 1;
+			document.getElementById("wins").innerHTML = parseInt(document.getElementById("wins").innerHTML) + 1;
 			newGame();
 		}
 		else if (countingValue > constantNum) {
-			document.getElementById("losses").innerHTML = parseInt(loser) + 1;
+			document.getElementById("losses").innerHTML = parseInt(document.getElementById("losses").innerHTML ) + 1;
 			newGame();
 		}
 	}
@@ -80,11 +79,11 @@ function image1(x) {
 		countingValue = parseInt(countingValue) + parseInt(document.getElementById("imageInput2").value);
 		document.getElementById("totalScore").innerHTML = countingValue;
 		if (countingValue === constantNum) {
-			document.getElementById("wins").innerHTML = parseInt(winner) + 1;
+			document.getElementById("wins").innerHTML = parseInt(document.getElementById("wins").innerHTML) + 1;
 			newGame();
 		}
 		else if (countingValue > constantNum) {
-			document.getElementById("losses").innerHTML = parseInt(loser) + 1;
+			document.getElementById("losses").innerHTML = parseInt(document.getElementById("losses").innerHTML) + 1;
 			newGame();
 		}
 	}
@@ -92,11 +91,11 @@ function image1(x) {
 		countingValue = parseInt(countingValue) + parseInt(document.getElementById("imageInput3").value);
 		document.getElementById("totalScore").innerHTML = countingValue;
 		if (countingValue === constantNum) {
-			document.getElementById("wins").innerHTML = parseInt(winner) + 1;
+			document.getElementById("wins").innerHTML = parseInt(document.getElementById("wins").innerHTML) + 1;
 			newGame();
 		}
 		else if (countingValue > constantNum) {
-			document.getElementById("losses").innerHTML = parseInt(loser) + 1;
+			document.getElementById("losses").innerHTML = parseInt(document.getElementById("losses").innerHTML ) + 1;
 			newGame();
 		}
 	}
@@ -104,11 +103,11 @@ function image1(x) {
 		countingValue = parseInt(countingValue) + parseInt(document.getElementById("imageInput4").value);
 		document.getElementById("totalScore").innerHTML = countingValue;
 		if (countingValue === constantNum) {
-			document.getElementById("wins").innerHTML = parseInt(winner) + 1;
+			document.getElementById("wins").innerHTML = parseInt(document.getElementById("wins").innerHTML) + 1;
 			newGame();
 		}
 		else if (countingValue > constantNum) {
-			document.getElementById("losses").innerHTML = parseInt(loser) + 1;
+			document.getElementById("losses").innerHTML = parseInt(document.getElementById("losses").innerHTML ) + 1;
 			newGame();
 		}
 	}
@@ -116,7 +115,8 @@ function image1(x) {
 	function newGame() {
 		intialize()
 		countingValue = 0;
-		 constantNum = 0;
+		//  constantNum = 0;
+		document.getElementById("totalScore").innerHTML=0;
 	}
 
 	function intialize() {
