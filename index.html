@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CRYSTAL-COLLECTOR!!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="page-header ">
+            <h1>HANGMAN!
+            <br>
+            <small>Instructions</small>
+                <p>
+                    * The player will be shown a random number at the start of the game.
+                 
+                    * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+                 
+                    * The player wins if their total score matches the random number from the beginning of the game.
+                 
+                    * The player loses if their score goes above the random number.
+                 
+                    * The game restarts whenever the player wins or loses.
+                 </p>
+            </h1>
+        </div>
+        <!-- CRYSTALS -->
+        <div class="container ">
+            <div class="row ">
+                <div class=" img-thumbnail ">
+                    <img src="assets/images/CRYSTAL1.jpg" class="crystalImage" id= "demo" alt="crystals">
+                </div>
+                <div class="img-thumbnail">
+                    <img src="assets/images/CRYSTAL2.jpg" class="crystalImage" alt="crystals">
+                </div>
+                <div class="img-thumbnail">
+                    <img src="assets/images/CRYSTAL3.jpg" class="crystalImage" alt="crystals">
+                </div>
+                <div class="img-thumbnail">
+                    <img src="assets/images/CRYSTAL4.jpg" class="crystalImage" alt="crystals">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SCORE  -->
+        <div class="bottom-left">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <h3>Random Number:</h3>
+                    <div id="randomNum">--</div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3>Total Score:</h3>
+                    <div id="totalScore">--</div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3>Wins:</h3>
+                    <div id="wins">0</div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h3>Losses:</h3>
+                    <div id="losses">0</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+  
+</body>
+
+</html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
